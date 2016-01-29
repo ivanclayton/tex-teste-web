@@ -4,12 +4,9 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>CRUD com Bootstrap 3</title>
-
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
-  <link href="css/form.css" rel="stylesheet">
-  
+ <link href="css/form.css" rel="stylesheet">
 </head>
 <body>
 <!-- Modal -->
@@ -26,22 +23,21 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
    <ul class="nav navbar-nav navbar-right">
-    <li><a href="login.html">Início</a></li>
-    <li><a href="#">Opções</a></li>
-    <li><a href="#">Perfil</a></li>
-    <li><a href="#">Ajuda</a></li>
+    <li><a href="login.html">Logoff</a></li>
    </ul>
   </div>
  </div>
 </nav>  
 <hr />
 <hr />
+  <div class="col-md-3">
+        <h2>Form</h2>
+    </div>
 <div id="fmain" class="container-fluid" >
 <form class="form-horizontal">
   <div class="form-group">
-    <label class="col-sm-2 control-label">ID:</label>
-    <div class="col-sm-10">
-      <p class="form-control-static">123.456.789-00</p>
+      <label class="col-sm-2 control-label">ID:</label>
+      <div class="col-sm-10"><p class="form-control-static" align="left">123.456.789-00</p>
     </div>
   </div>
   
@@ -59,11 +55,11 @@
     </div>
   </div>
 
-     <div class="form-group">
-	<label for="inputPassword" class="col-sm-2 control-label">First Name</label>
-	<div class="col-sm-10">
-		<input type="text" class="form-control" id="inputPassword" value="Ivan" placeholder="First Name">
-    </div>
+	 <div class="form-group">
+		<label for="inputPassword" class="col-sm-2 control-label">First Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputPassword" value="Ivan" placeholder="First Name">
+		</div>
 	</div>
 
     <div class="form-group">	
@@ -93,30 +89,28 @@
 			<input type="text" class="form-control" id="inputPassword" value="9999-9999" placeholder="Contact">
 		</div>
 	</div>
+	
+		 <div class="form-group">
+     	<label for="inputPassword" class="col-sm-2 control-label">Level</label>
+        <div class="col-xs-5 selectContainer">
+            <select class="form-control" name="color">
+                <option value="">Choose a level</option>
+                <option value="adm">Administrator</option>
+                <option value="man">Managed</option>
+                <option value="qry">Query</option>
+            </select>
+        </div>
+    </div>
 
-<div class="prettyprint bs-docs-example" id="example">
-    <div>
-	<input type="checkbox" class="style1" />    Administrator 
-	     <input type="checkbox" class="style1" />Managed
-	     <input type="checkbox" class="style1" />Query
+	<div class="prettyprint bs-docs-example" id="example">
+		<div>
+		<input type="checkbox" class="style1" />    User Active 
+		</div>
 	</div>
-</div>
-
-		
-
-
-
-
+	<hr/>
 	<button class="btn btn-primary" type="submit">Save</button>
-	 <a href="login.html" class="btn btn-default">Cancelar</a>
-	
-	
-	
+	 <a href="users.html" class="btn btn-default">Cancel</a>
 </form>
-
-
 </div> 
-
-    
 </body>
 </html>
